@@ -1,7 +1,9 @@
 language: node_js
 
 nodej_js:
-  - node
+  - 9
+  - 8
+  - stable
 
 install:
   - npm ci
