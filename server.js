@@ -14,6 +14,7 @@ server.listen(port, () => {
 app.use(express.static(path.join(__dirname, 'public')));
 
 global.pid = process.pid
+console.log(132)
 
 // socket.io-server
 
