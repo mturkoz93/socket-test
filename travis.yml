@@ -2,15 +2,17 @@
 language: node_js
 # Aynı zamanda Travis’e kullandığınız dilin versiyonunu belirtmelisiniz
 node_js:
-  - “stable”
+  - "0.11"
+  - "0.10"
+  - "0.8"
 deploy:
   # Deploy işlemi için kullandığınız platformun ismi
   provider: heroku
   # https://dashboard.heroku.com/account adresinden aldığınız API_KEY
   api_key:
-    secure: API_KEY
+    secure: a5bf7780-3dd9-42ac-8c08-e59d8dab7742
   # Heroku projesinin ismi
-  app: heroku_repo_ismi
+  app: mustafa-deploy
   on:
     # Github reponuzun ismi
-    repo: github_repo_ismi
+    repo: mturkoz93/socket-test
